@@ -1,0 +1,18 @@
+package ObserverPatternDemo;
+
+public class CoursesObserver implements IObserver {
+	private Student student updater;
+	
+	public CoursesObserver() {
+		
+	}
+	
+	public void update(Student student updater) {
+		if student.attachObserver(CoursesObserver) ;
+		for (int i = 0; i < student.courses.size(); i++){
+		System.out.println("Student's Course is" + student.courses.get(i)));
+		}
+	}
+}
+
+}
