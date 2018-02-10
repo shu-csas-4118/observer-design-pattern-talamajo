@@ -1,0 +1,18 @@
+package ObserverPatternDemo;
+
+public class EmailObserver implements IObserver {
+	private Student student updater;
+	
+	public EmailObserver() {
+		
+	}
+	
+	public void update(Student student updater) {
+		
+		if student.attachObserver(EmailObserver);
+		System.out.println("Student's Email is " + student.getEmail());
+	}
+}
+
+
+}
