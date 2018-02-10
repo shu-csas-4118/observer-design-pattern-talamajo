@@ -7,6 +7,7 @@ public class Student {
 	private String lastName;
 	private String email;
 	private int idNumber;
+	private ArrayList<String> courses;
 	private ArrayList<IObserver> observers;
 	
 	public Student(String firstName, String lastName, int idNumber, String email) {
@@ -14,6 +15,7 @@ public class Student {
 		this.lastName = lastName;
 		this.idNumber = idNumber;
 		this.email = email;
+		this.courses = new ArrayList<String>();
 		this.observers = new ArrayList<IObserver>();
 	}
 	
@@ -54,6 +56,23 @@ public class Student {
 	
 	public String getEmail() {
 		return this.email;
+		
+	}
+	
+	public void setCourses(String courses) {
+		this.courses = courses;
+		notifyAllObservers();
+		
+	}
+		
+	public String getCourses() {
+		return.this.courses;
+		
+	}
+	
+	public void addCourses(String courses) {
+		this.courses.add(courses);
+	
 	}
 	
 	public void attachObserver(IObserver observer) {
